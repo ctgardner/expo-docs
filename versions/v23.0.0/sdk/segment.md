@@ -70,6 +70,21 @@ Record that a user has seen a screen to Segment with custom properties. See <htt
 -   **screenName (_string_)** -- Name of the screen.
 -   **properties (_object_)** -- A map of custom properties.
 
+### `Expo.Segment.alias(previousId)`
+
+Merge two user identities in Segment. See <https://segment.com/docs/spec/alias/>.
+
+#### Arguments
+
+-   **previousId (_string_)** -- Previous unique identifier for the user.
+
+### `Expo.Segment.aliasWithOptions(previousId, options)`
+
+Merge two user identities in Segment with custom options. See <https://segment.com/docs/spec/alias/>.
+
+-   **previousId (_string_)** -- Previous unique identifier for the user.
+-   **options (_object_)** -- A map of custom options.
+
 ### `Expo.Segment.flush()`
 
 Manually flush the event queue. You shouldn't need to call this in most cases.
