@@ -73,3 +73,11 @@ Record that a user has seen a screen to Segment with custom properties. See <htt
 ### `Expo.Segment.flush()`
 
 Manually flush the event queue. You shouldn't need to call this in most cases.
+
+### `Expo.Segment.optOut(optOut)`
+
+Disable or re-enable Segment analytics data collection. See <https://segment.com/docs/sources/mobile/android/#opt-out> and <https://segment.com/docs/sources/mobile/ios/#opt-out>.
+
+#### Arguments
+
+-   **optOut (_boolean_)** -- Should analytics data be sent to Segment? When `true`, data will not be sent.
